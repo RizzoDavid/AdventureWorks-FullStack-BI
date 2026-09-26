@@ -1,6 +1,3 @@
-USE [AdventureWorksDW2022]; -- Update to match your exact DW database name
-GO
-
 CREATE OR ALTER VIEW dbo.vw_DimDate AS
 SELECT 
     DateKey,
