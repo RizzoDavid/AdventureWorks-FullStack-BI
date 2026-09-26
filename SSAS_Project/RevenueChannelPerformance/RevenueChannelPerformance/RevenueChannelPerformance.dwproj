@@ -6,10 +6,72 @@
     <Name>RevenueChannelPerformance.database</Name>
     <FullPath>RevenueChannelPerformance.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Adventure Works DW2025.cube</Name>
+      <FullPath>Adventure Works DW2025.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Adventure Works DW2025.partitions</Name>
+          <FullPath>Adventure Works DW2025.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Vw Fact Internet Sales.dim</Name>
+      <FullPath>Vw Fact Internet Sales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vw Fact Reseller Sales.dim</Name>
+      <FullPath>Vw Fact Reseller Sales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vw Dim Product.dim</Name>
+      <FullPath>Vw Dim Product.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Adventure Works DW2025.ds</Name>
+      <FullPath>Adventure Works DW2025.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Adventure Works DW2025.dsv</Name>
+      <FullPath>Adventure Works DW2025.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2025</Id>
+            <Name>Adventure Works DW2025</Name>
+            <Value xsi:type="xsd:string">Data Source=hl-sql01.ad.therizzofamily.com;Initial Catalog=AdventureWorksDW2025;Integrated Security=True</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2025</Id>
+            <Name>Adventure Works DW2025</Name>
+            <Value xsi:type="xsd:string">Microsoft.Data.SqlClient</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2025</Id>
+            <Name>Adventure Works DW2025</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DeploymentServerEdition>Enterprise</DeploymentServerEdition>
+        <DeploymentServerVersion>16.0</DeploymentServerVersion>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
