@@ -1,2 +1,2 @@
 USE[AdventureWorksDW2025]
-EXEC sp_help  FactInternetSales
+EXEC sp_help  DimProduct
