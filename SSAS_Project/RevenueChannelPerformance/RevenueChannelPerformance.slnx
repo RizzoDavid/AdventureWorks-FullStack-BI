@@ -3,7 +3,7 @@
     <BuildType Name="Development" />
     <Platform Name="Default" />
   </Configurations>
-  <Project Path="Analysis Services Tutorial/Analysis Services Tutorial.dwproj" Type="d2abab84-bf74-430a-b69e-9dc6d40dda17">
+  <Project Path="RevenueChannelPerformance/RevenueChannelPerformance.dwproj" Type="d2abab84-bf74-430a-b69e-9dc6d40dda17">
     <Platform Project="?" />
     <Deploy />
   </Project>
