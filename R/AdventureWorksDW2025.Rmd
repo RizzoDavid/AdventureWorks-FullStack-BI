@@ -1,6 +1,8 @@
 ---
 title: "AdventureWorksDW2025"
 output: html_notebook
+editor_options: 
+  chunk_output_type: console
 ---
 
 # Import Packages
@@ -37,37 +39,110 @@ con <- dbConnect(
 ## List All Tables
 
 ```{r}
-# SQL way (identical to the notebook)
-#dbGetQuery(con, "SELECT name FROM AdventureWorksDW2025.sys.tables;")
+# Query base user tables directly from the database catalog
+user_tables <- dbGetQuery(con, "
+  SELECT TABLE_NAME 
+  FROM INFORMATION_SCHEMA.TABLES 
+  WHERE TABLE_TYPE = 'BASE TABLE'
+")$TABLE_NAME
 
-# Or the native DBI way — returns the same list
-dbListTables(con)
-
+print(user_tables)
 ```
 
-## Inspect Table
+## List All Views
+
+```{r}
+# Query views directly from the database catalog
+views <- dbGetQuery(con, "
+  SELECT * 
+  FROM sys.views
+")$name
+
+print(views)
+```
+
+## Inspect Tables
+
+### FactInternetSales
 
 ```{r}
 df <- dbReadTable(con, "FactInternetSales")
 
-#df_info <- function(df) {
-#  data.frame(
-#    column   = names(df),
-#    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
-#    dtype    = vapply(df, function(x) class(x)[1], character(1)),
-#    row.names = NULL
-#  )
-#}
+df_info <- function(df) {
+  data.frame(
+    column   = names(df),
+    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
+    dtype    = vapply(df, function(x) class(x)[1], character(1)),
+    row.names = NULL
+  )
+}
 
 df_info(df)          # ≈ df.info()
 colSums(is.na(df))   # ≈ df.isnull().sum()
 sum(duplicated(df))  # ≈ df.duplicated().sum()
+```
 
+### FactResellerSales
+
+```{r}
+df <- dbReadTable(con, "FactResellerSales")
+
+df_info <- function(df) {
+  data.frame(
+    column   = names(df),
+    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
+    dtype    = vapply(df, function(x) class(x)[1], character(1)),
+    row.names = NULL
+  )
+}
+
+df_info(df)          # ≈ df.info()
+colSums(is.na(df))   # ≈ df.isnull().sum()
+sum(duplicated(df))  # ≈ df.duplicated().sum()
+```
+
+### DimProduct
+
+```{r}
+df <- dbReadTable(con, "DimProduct")
+
+df_info <- function(df) {
+  data.frame(
+    column   = names(df),
+    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
+    dtype    = vapply(df, function(x) class(x)[1], character(1)),
+    row.names = NULL
+  )
+}
+
+df_info(df)          # ≈ df.info()
+colSums(is.na(df))   # ≈ df.isnull().sum()
+sum(duplicated(df))  # ≈ df.duplicated().sum()
+```
+
+### DimDate
+
+```{r}
+df <- dbReadTable(con, "DimDate")
+
+df_info <- function(df) {
+  data.frame(
+    column   = names(df),
+    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
+    dtype    = vapply(df, function(x) class(x)[1], character(1)),
+    row.names = NULL
+  )
+}
+
+df_info(df)          # ≈ df.info()
+colSums(is.na(df))   # ≈ df.isnull().sum()
+sum(duplicated(df))  # ≈ df.duplicated().sum()
 ```
 
 ## Join & Plot
 
 ```{r}
+# 1. Re-run the SQL query to get the combined sales data
 sql_query <- "
 SELECT p.EnglishProductName AS ProductName,
        'Internet' AS SalesChannel,
@@ -84,34 +159,26 @@ JOIN DimProduct p ON f.ProductKey = p.ProductKey
 
 df <- dbGetQuery(con, sql_query)
 
+# 2. Summarize by Month and SalesChannel
 monthly <- df |>
   mutate(Month = floor_date(as.Date(OrderDate), "month")) |>
   summarise(SalesAmount = sum(SalesAmount), .by = c(Month, SalesChannel))
 
-ggplot(monthly, aes(x = Month, y = SalesAmount, color = SalesChannel)) +
-  geom_line() +
+# 3. Filter for the overlapping date range (Jan 2011 to Nov 2013)
+monthly_overlap <- monthly |>
+  filter(Month >= as.Date("2011-01-01") & Month <= as.Date("2013-11-01"))
+
+# 4. Plot
+ggplot(monthly_overlap, aes(x = Month, y = SalesAmount, color = SalesChannel)) +
+  geom_line(linewidth = 1) +
   scale_color_manual(values = c("Internet" = "#4C72B0", "Reseller" = "#DD8452")) +
-  labs(title = "Monthly Sales by Channel", x = NULL, y = "SalesAmount") +
+  scale_y_continuous(labels = scales::dollar) +
+  labs(
+    title = "Monthly Sales by Channel (Overlapping Period)",
+    subtitle = "Active window: Jan 2011 – Nov 2013",
+    x = NULL,
+    y = "Sales Amount"
+  ) +
   theme_minimal()
-
-```
-
-## Not sure what this is
-
-```{r}
-internet <- tbl(con, "FactInternetSales") |>
-  select(ProductKey, OrderDate, SalesAmount) |>
-  mutate(SalesChannel = "Internet")
-reseller <- tbl(con, "FactResellerSales") |>
-  select(ProductKey, OrderDate, SalesAmount) |>
-  mutate(SalesChannel = "Reseller")
-
-monthly <- union_all(internet, reseller) |>
-  inner_join(tbl(con, "DimProduct") |> select(ProductKey, EnglishProductName),
-             by = "ProductKey") |>
-  mutate(Month = sql("DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1)")) |>
-  group_by(Month, SalesChannel) |>
-  summarise(SalesAmount = sum(SalesAmount, na.rm = TRUE), .groups = "drop") |>
-  collect()          # only now is data pulled into R
 
 ```
