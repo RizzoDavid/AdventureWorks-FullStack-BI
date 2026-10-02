@@ -2,7 +2,7 @@
 title: "AdventureWorksDW2025"
 output: html_notebook
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 # Import Packages
