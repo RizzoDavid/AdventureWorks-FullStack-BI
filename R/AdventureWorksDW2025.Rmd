@@ -1,0 +1,117 @@
+---
+title: "AdventureWorksDW2025"
+output: html_notebook
+---
+
+# Import Packages
+
+```{r}
+library(DBI)        # dbConnect / dbGetQuery / dbListTables  (≈ sqlalchemy)
+library(odbc)       # ODBC driver layer                        (≈ pyodbc)
+library(dplyr)      # group_by / summarise / mutate           (≈ pandas)
+library(tidyr)
+library(lubridate)  # floor_date()                            (≈ pd.Grouper freq="M")
+library(ggplot2)    # plotting                                (≈ matplotlib + seaborn)
+```
+
+# Connect to Server
+
+```{r}
+readRenviron(".env")
+
+con <- dbConnect(
+  odbc::odbc(),
+  Driver   = "ODBC Driver 18 for SQL Server",
+  Server   = Sys.getenv("SQL_HOST"),   # host,port in one string
+  Database = "AdventureWorksDW2025",
+  UID      = Sys.getenv("SQL_USER"),
+  PWD      = Sys.getenv("SQL_PASSWORD"),
+  TrustServerCertificate = "yes",
+  timeout  = 5
+)
+
+```
+
+# Exploratory Data Analysis
+
+## List All Tables
+
+```{r}
+# SQL way (identical to the notebook)
+dbGetQuery(con, "SELECT name FROM AdventureWorksDW2025.sys.tables;")
+
+# Or the native DBI way — returns the same list
+dbListTables(con)
+
+```
+
+## Inspect Table
+
+```{r}
+df <- dbGetQuery(con, "SELECT * FROM FactInternetSales;")   # or dbReadTable(con, "FactInternetSales")
+
+df_info <- function(df) {
+  data.frame(
+    column   = names(df),
+    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
+    dtype    = vapply(df, function(x) class(x)[1], character(1)),
+    row.names = NULL
+  )
+}
+
+df_info(df)          # ≈ df.info()
+colSums(is.na(df))   # ≈ df.isnull().sum()
+sum(duplicated(df))  # ≈ df.duplicated().sum()
+
+```
+
+## Join & Plot
+
+```{r}
+sql_query <- "
+SELECT p.EnglishProductName AS ProductName,
+       'Internet' AS SalesChannel,
+       f.OrderDate, f.SalesAmount
+FROM FactInternetSales f
+JOIN DimProduct p ON f.ProductKey = p.ProductKey
+UNION ALL
+SELECT p.EnglishProductName AS ProductName,
+       'Reseller' AS SalesChannel,
+       f.OrderDate, f.SalesAmount
+FROM FactResellerSales f
+JOIN DimProduct p ON f.ProductKey = p.ProductKey
+"
+
+df <- dbGetQuery(con, sql_query)
+
+monthly <- df |>
+  mutate(Month = floor_date(as.Date(OrderDate), "month")) |>
+  summarise(SalesAmount = sum(SalesAmount), .by = c(Month, SalesChannel))
+
+ggplot(monthly, aes(x = Month, y = SalesAmount, color = SalesChannel)) +
+  geom_line() +
+  scale_color_manual(values = c("Internet" = "#4C72B0", "Reseller" = "#DD8452")) +
+  labs(title = "Monthly Sales by Channel", x = NULL, y = "SalesAmount") +
+  theme_minimal()
+
+```
+
+## Not sure what this is
+
+```{r}
+internet <- tbl(con, "FactInternetSales") |>
+  select(ProductKey, OrderDate, SalesAmount) |>
+  mutate(SalesChannel = "Internet")
+reseller <- tbl(con, "FactResellerSales") |>
+  select(ProductKey, OrderDate, SalesAmount) |>
+  mutate(SalesChannel = "Reseller")
+
+monthly <- union_all(internet, reseller) |>
+  inner_join(tbl(con, "DimProduct") |> select(ProductKey, EnglishProductName),
+             by = "ProductKey") |>
+  mutate(Month = sql("DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1)")) |>
+  group_by(Month, SalesChannel) |>
+  summarise(SalesAmount = sum(SalesAmount, na.rm = TRUE), .groups = "drop") |>
+  collect()          # only now is data pulled into R
+
+```
