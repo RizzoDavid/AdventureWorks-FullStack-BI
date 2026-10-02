@@ -38,7 +38,7 @@ con <- dbConnect(
 
 ```{r}
 # SQL way (identical to the notebook)
-dbGetQuery(con, "SELECT name FROM AdventureWorksDW2025.sys.tables;")
+#dbGetQuery(con, "SELECT name FROM AdventureWorksDW2025.sys.tables;")
 
 # Or the native DBI way — returns the same list
 dbListTables(con)
@@ -48,16 +48,16 @@ dbListTables(con)
 ## Inspect Table
 
 ```{r}
-df <- dbGetQuery(con, "SELECT * FROM FactInternetSales;")   # or dbReadTable(con, "FactInternetSales")
+df <- dbReadTable(con, "FactInternetSales")
 
-df_info <- function(df) {
-  data.frame(
-    column   = names(df),
-    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
-    dtype    = vapply(df, function(x) class(x)[1], character(1)),
-    row.names = NULL
-  )
-}
+#df_info <- function(df) {
+#  data.frame(
+#    column   = names(df),
+#    non_null = vapply(df, function(x) sum(!is.na(x)), integer(1)),
+#    dtype    = vapply(df, function(x) class(x)[1], character(1)),
+#    row.names = NULL
+#  )
+#}
 
 df_info(df)          # ≈ df.info()
 colSums(is.na(df))   # ≈ df.isnull().sum()
