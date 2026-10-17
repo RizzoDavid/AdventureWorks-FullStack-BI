@@ -31,6 +31,10 @@
       <Name>Vw Dim Product.dim</Name>
       <FullPath>Vw Dim Product.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Vw Dim Date.dim</Name>
+      <FullPath>Vw Dim Date.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -52,7 +56,7 @@
           <ConfigurationSetting>
             <Id>Adventure Works DW2025</Id>
             <Name>Adventure Works DW2025</Name>
-            <Value xsi:type="xsd:string">Data Source=hl-sql01.ad.therizzofamily.com;Initial Catalog=AdventureWorksDW2025;Integrated Security=True</Value>
+            <Value xsi:type="xsd:string">Data Source=hl-sql01.ad.therizzofamily.com\MSSQLSERVER01;Initial Catalog=AdventureWorksDW2025;Integrated Security=True</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>
@@ -70,7 +74,6 @@
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
         <DeploymentServerEdition>Enterprise</DeploymentServerEdition>
-        <DeploymentServerVersion>16.0</DeploymentServerVersion>
       </Options>
     </Configuration>
   </Configurations>

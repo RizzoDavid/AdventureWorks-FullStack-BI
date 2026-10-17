@@ -1,14 +1,14 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e66dbfaa-5d77-474c-ab0a-3ee51748c160" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f960bd3b-65dc-43d7-ac80-8029d8627502" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Adventure Works DW2025</ID>
   <Name>Adventure Works DW2025</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6424" scrolltop="-7819" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32359" y="21696" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="15" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6424" scrolltop="-7819" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="38814" y="20003" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_DimProduct" left="20953" top="0" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_DimProduct" left="14576" top="5435" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
             </control>
@@ -52,7 +52,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3821" top="0" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="17432" height="1509" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3821" top="0" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="11055" height="6944" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -66,13 +66,13 @@
               </ddsxmlobj>
             </layoutobject>
             <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="20953" y="1109" />
-              <point x="12537" y="1109" />
+              <point x="14576" y="6544" />
+              <point x="12537" y="6544" />
               <point x="12537" y="300" />
               <point x="4121" y="300" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="17653" top="0" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="3600" height="959" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="14102" top="4700" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="1274" height="1235" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -85,11 +85,64 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="10" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="20953" y="559" />
-              <point x="19453" y="559" />
-              <point x="19453" y="300" />
-              <point x="17953" y="300" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14976" y="5435" />
+              <point x="14976" y="5035" />
+              <point x="14402" y="5035" />
+              <point x="14402" y="5435" />
+              <point x="14802" y="5435" />
+              <point x="14802" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_DimDate" left="10076" top="-319" logicalid="12" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_vw_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="21" top="-1019" logicalid="13" controlid="8" masterid="0" hint1="0" hint2="0" width="10755" height="1519" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[vw_DimDate-vw_FactInternetSales]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="0" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="420" y="0" />
+              <point x="420" y="-719" />
+              <point x="10476" y="-719" />
+              <point x="10476" y="-319" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12776" top="-99" logicalid="14" controlid="9" masterid="0" hint1="0" hint2="0" width="1376" height="930" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[vw_DimDate-vw_FactResellerSales]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="7" sourceattachpoint="14" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13852" y="300" />
+              <point x="13452" y="300" />
+              <point x="13452" y="531" />
+              <point x="13076" y="531" />
             </connector>
           </ddscontrol>
         </dds>
@@ -121,88 +174,107 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-319</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="528c2200-a6e9-40ef-90cb-3d38d981ab5a">
+    <Dimension dwd:design-time-name="595618bf-ea69-4866-88f4-f0c314e263d0">
       <ID>Vw Dim Product</ID>
       <Name>Vw Dim Product</Name>
       <DimensionID>Vw Dim Product</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="49abd339-a3c5-4556-8cd9-f875e41ce6ab">
+        <Attribute dwd:design-time-name="f2760d80-7e54-4223-8e21-1dbd75804485">
+          <AttributeID>Product Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3c4d5d61-0db8-40ed-b13e-23caf4ecf61f">
+      <ID>Vw Dim Date</ID>
+      <Name>Vw Dim Date</Name>
+      <DimensionID>Vw Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fda833c1-1729-4f7a-8f62-a2415aca03de">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38cee775-5890-497b-b3f8-73f96b65eb7f">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="abbe39ca-8946-47d0-a4d5-f05162b59745">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="802e2acf-c37b-4f22-bfc6-84557cc50802">
           <AttributeID>Product Key</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="9b5049a0-dd27-4921-9a57-1dcddda3f6e6">
+    <MeasureGroup dwd:design-time-name="95abb863-05fe-4551-95bb-77489fc5cdc1">
       <ID>Vw Fact Internet Sales</ID>
       <Name>Vw Fact Internet Sales</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="40a0e5c7-fbce-4bf4-b699-463b74fb4aa8">
+        <Measure dwd:design-time-name="f89f2190-b115-4408-a82c-eeac08dc8900">
           <ID>Order Quantity</ID>
           <Name>Internet Order Quantity</Name>
-          <Source dwd:design-time-name="c4517803-3a3f-49d4-adbc-8f173421d0bc">
+          <Source dwd:design-time-name="a979a402-2c8a-49f2-a519-28c221334434">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="8eaeacc8-76d6-4fd6-931d-e7e74ddb8880">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c05c254e-0040-4a8f-b653-98884d5acc34">
               <TableID>dbo_vw_FactInternetSales</TableID>
               <ColumnID>OrderQuantity</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="06e85eb2-b94c-4e23-8db3-3a5358d5dcfb">
+        <Measure dwd:design-time-name="c1fa1bb2-5836-45bc-ac82-2e4a12dae115">
           <ID>Sales Amount</ID>
           <Name>Internet Sales Amount</Name>
-          <Source dwd:design-time-name="ba696735-980c-45a9-aee5-47fde873249c">
+          <Source dwd:design-time-name="dc0c799f-5343-46e5-8468-70150b4e1493">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="8177f0fd-49b2-4ad9-a15c-c0ddc7f4eab3">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c397aaa0-f27e-4066-9189-107668390526">
               <TableID>dbo_vw_FactInternetSales</TableID>
               <ColumnID>SalesAmount</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="4643be1c-2618-4336-a635-dc2777e71e40">
+        <Measure dwd:design-time-name="9a8ce290-6ec9-42c2-9c31-f3c94c189da7">
           <ID>Total Product Cost</ID>
           <Name>Internet Product Cost</Name>
-          <Source dwd:design-time-name="e202a852-ad7d-4950-9ce3-9d98e0dea277">
+          <Source dwd:design-time-name="c6e4d634-092d-46d3-aaa3-70849f87680a">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="77632a92-d69b-4fb9-9d76-29701c57f1eb">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b0e8e1ab-eb44-47e8-8e81-f122bc3b8a97">
               <TableID>dbo_vw_FactInternetSales</TableID>
               <ColumnID>TotalProductCost</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="716e66d6-5385-4ece-bda0-118d33a4d7a6">
+        <Measure dwd:design-time-name="f37c7346-87fa-432b-bccc-4c2abbe1574b">
           <ID>Gross Profit</ID>
           <Name>Internet Gross Profit</Name>
-          <Source dwd:design-time-name="3144d50e-7145-4377-beab-b9a4d88c2a32">
+          <Source dwd:design-time-name="4ad6ed34-ae6e-4f24-b665-13064bcdf4f6">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="59dd7234-c1b8-4854-8642-bbd3e3a225e7">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b15361cd-d9e8-4a6c-acd2-4e55678ec541">
               <TableID>dbo_vw_FactInternetSales</TableID>
               <ColumnID>GrossProfit</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="512b2814-9d95-407a-a62c-93b52004f480">
+        <Measure dwd:design-time-name="e1b61e7c-5701-49f5-a1d6-bbf238246a04">
           <ID>Vw Fact Internet Sales Count</ID>
           <Name>Vw Fact Internet Sales Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="93f424ee-8c75-425e-8dad-19b469f74971">
+          <Source dwd:design-time-name="c18a7a56-18b3-4db6-84ef-01313e12e8d3">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="9cd5cbf4-96e6-4f0d-9b66-964fab30d529">
+            <Source xsi:type="RowBinding" dwd:design-time-name="66c1ee15-6fbe-4cda-bb08-9bc640a1c604">
               <TableID>dbo_vw_FactInternetSales</TableID>
             </Source>
           </Source>
@@ -211,15 +283,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e6d418c1-d995-4746-9384-28382fc8d9f3">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fd1626d2-ecd9-4c8a-90bc-b4ed7d59f354">
           <CubeDimensionID>Vw Dim Product</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8814b64f-32cf-49db-ae2d-b9651ba7d05a">
+            <Attribute dwd:design-time-name="6c983661-9dca-441e-b455-1077f2fe4b4d">
               <AttributeID>Product Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0dae23a7-3cbb-4e5e-b48b-b7360a53fc9f">
+                <KeyColumn dwd:design-time-name="e437f6bb-ac3f-4925-ab8a-bc1d2d3835af">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8cd1ba1-d089-414f-afdf-17f1becf570f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c4539c26-c6a3-4515-90a4-a8647d42021e">
                     <TableID>dbo_vw_FactInternetSales</TableID>
                     <ColumnID>ProductKey</ColumnID>
                   </Source>
@@ -229,80 +301,109 @@
             </Attribute>
           </Attributes>
         </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="041258b9-2325-4b55-9ca6-7245a63e9275">
+          <CubeDimensionID>Vw Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5a1e91a6-381d-4ff4-9c64-f9b57a760f5d">
+              <AttributeID>Product Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6a920f61-88ac-4527-8feb-e7b5c1229cf2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7108082b-22ed-42cf-9dad-9b50b53c2571">
+                    <TableID>dbo_vw_FactInternetSales</TableID>
+                    <ColumnID>ProductKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7d7740cf-66ef-4c64-93a3-23835ecbfcf5">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9afcdf2-8db6-45e3-915a-06bac4cb3849">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44aca084-b37a-4d69-96c9-cfcea7a0acb1">
+                    <TableID>dbo_vw_FactInternetSales</TableID>
+                    <ColumnID>OrderDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
       </Dimensions>
-      <Partitions />
     </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="6d3d403d-8f16-4ff6-aa7f-6f33fa30818b">
+    <MeasureGroup dwd:design-time-name="8abb3a06-1c33-43ea-882a-81f2b9861108">
       <ID>Vw Fact Reseller Sales</ID>
       <Name>Vw Fact Reseller Sales</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="ff6390a3-2222-4d92-b982-ca307e6d9579">
+        <Measure dwd:design-time-name="d64ef5a2-0b2d-4179-b32e-3289eeba709e">
           <ID>Order Quantity - Vw Fact Reseller Sales</ID>
           <Name>Reseller Order Quantity</Name>
-          <Source dwd:design-time-name="2ac80b1e-4cce-4209-ad19-f31ee1317d0a">
+          <Source dwd:design-time-name="3ca566a9-5602-4932-83bc-79f738452974">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="7d0d5091-0e31-4bb7-b764-c89e55cd0d9d">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e03d5531-c393-4b33-8156-2adaeabf5eb7">
               <TableID>dbo_vw_FactResellerSales</TableID>
               <ColumnID>OrderQuantity</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="31aaf2c3-c04b-4786-80d6-f0946e710d9f">
+        <Measure dwd:design-time-name="2b0a3c45-1100-4b1b-966d-f3d9f1900a3e">
           <ID>Extended Amount</ID>
           <Name>Extended Amount</Name>
-          <Source dwd:design-time-name="8a125b27-7782-4913-b68d-280fb4a7d0df">
+          <Source dwd:design-time-name="a1d81ebd-5bbe-4e99-ac0b-db0028dce5ed">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a0663ae6-b0f8-4f92-adac-5181a07add3e">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6c68d812-51e8-47de-a37d-170236143fcd">
               <TableID>dbo_vw_FactResellerSales</TableID>
               <ColumnID>ExtendedAmount</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="517b50a3-7196-4deb-bf79-8cb3cb743a30">
+        <Measure dwd:design-time-name="867808e9-996b-4c14-bc7e-dac510aa48bf">
           <ID>Total Product Cost - Vw Fact Reseller Sales</ID>
           <Name>Reseller Product Cost</Name>
-          <Source dwd:design-time-name="a9d57b21-d50c-41ca-9a38-c390ef9a527f">
+          <Source dwd:design-time-name="1a2c9364-0746-40cb-af81-c042e7229643">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="2f8d3623-7dd9-4f5b-9379-e398e65a253d">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8185f5e8-f58b-43e6-93c4-0dabcb3183e3">
               <TableID>dbo_vw_FactResellerSales</TableID>
               <ColumnID>TotalProductCost</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="6e28b8f4-bb25-4be1-be34-b950746d1dd5">
+        <Measure dwd:design-time-name="72680037-da6f-4cf7-b4cd-30ecb1863e5c">
           <ID>Sales Amount - Vw Fact Reseller Sales</ID>
           <Name>Reseller Sales Amount</Name>
-          <Source dwd:design-time-name="2134b019-a5b6-42bc-b1b7-bd40fa40471a">
+          <Source dwd:design-time-name="e513541c-5dce-43e1-a643-ca408ccf5ea4">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="576715de-b8c6-4415-860a-716d0f7f097c">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="241864b2-274d-429b-9d81-f9d92e28d26e">
               <TableID>dbo_vw_FactResellerSales</TableID>
               <ColumnID>SalesAmount</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="480fa891-56ec-4a56-bfdb-d5e03499a79b">
+        <Measure dwd:design-time-name="c6eea4bd-a211-4a9f-b158-d3c202415ed3">
           <ID>Gross Profit - Vw Fact Reseller Sales</ID>
           <Name>Reseller Gross Profit</Name>
-          <Source dwd:design-time-name="9c962652-c3a2-41b5-ad02-2398e54c79d2">
+          <Source dwd:design-time-name="d8f1e940-3ae2-4507-9f32-63e10de3def3">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="1ed631b0-111f-49a6-a731-e5fcd6c49aee">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="019ec5c6-0383-485c-a85b-c1d6a29b1aa0">
               <TableID>dbo_vw_FactResellerSales</TableID>
               <ColumnID>GrossProfit</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="33cbea32-6501-48cd-bb40-9e9e13cded04">
+        <Measure dwd:design-time-name="a3d0189a-a1ee-4fd0-9221-b702d436164c">
           <ID>Vw Fact Reseller Sales Count</ID>
           <Name>Vw Fact Reseller Sales Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="ae9d12c2-6b00-44d3-9e56-a2b6da9e70b7">
+          <Source dwd:design-time-name="ce4615a7-54ef-464e-a21b-61d0f211cc15">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="65c61f9a-4ffb-48f0-b74f-f8b7a90353d1">
+            <Source xsi:type="RowBinding" dwd:design-time-name="345a0a3e-eb1d-4a0d-931a-d53bb674fc22">
               <TableID>dbo_vw_FactResellerSales</TableID>
             </Source>
           </Source>
@@ -311,15 +412,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="023766b1-0baf-462c-b1ae-516f127cf4e3">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bf75b586-72bd-4fc1-b0e6-ea2285d8dd77">
           <CubeDimensionID>Vw Dim Product</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="76928ab3-4a33-4086-9b70-07dd6e3c62c0">
+            <Attribute dwd:design-time-name="5bdef171-1ce2-4e8d-8bb4-0f5cab2a1c01">
               <AttributeID>Product Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0261e42e-ebeb-41d8-b039-c006dd57ee03">
+                <KeyColumn dwd:design-time-name="30ec550f-c59c-488d-8c07-25acaedfa3d3">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="11b62565-25e3-4b84-9a41-340d1b95493b">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="77cb20e6-7750-4d98-b2b3-dba2f9c4a5be">
                     <TableID>dbo_vw_FactResellerSales</TableID>
                     <ColumnID>ProductKey</ColumnID>
                   </Source>
@@ -329,11 +430,40 @@
             </Attribute>
           </Attributes>
         </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ad50022c-ea78-4910-a947-f7d380dd75b7">
+          <CubeDimensionID>Vw Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="785602db-cfee-4b93-9e53-59ebf2722fc3">
+              <AttributeID>Product Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cb04c954-4dc5-4a60-b8cb-cfeb20041d81">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f170a3b8-6906-4846-a9e6-cd118749a044">
+                    <TableID>dbo_vw_FactResellerSales</TableID>
+                    <ColumnID>ProductKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1eb1cdf4-c5eb-4fe6-9844-cfc33bc518ee">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e9a0558a-2ffc-4572-8270-0222e51d8cde">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0fa07ae7-3aca-4814-ab0e-e93d7a4e03a7">
+                    <TableID>dbo_vw_FactResellerSales</TableID>
+                    <ColumnID>OrderDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
       </Dimensions>
-      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="d2119c3a-4b7d-4980-ab35-e6df992cc1a5">
+  <Source dwd:design-time-name="055f3f88-a572-4728-972b-3f94f3247c34">
     <DataSourceViewID>Adventure Works DW2025</DataSourceViewID>
   </Source>
 </Cube>
