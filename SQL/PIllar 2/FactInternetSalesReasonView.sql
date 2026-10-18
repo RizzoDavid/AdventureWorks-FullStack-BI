@@ -1,4 +1,4 @@
-CREATE or ALTER VIEW dbo.vw_FactInternetSalesReason	
+CREATE or ALTER VIEW dboCREATE or ALTER VIEW dbo.vw_FactInternetSalesReason AS
 	SELECT
 		SalesOrderNumber,
 		SalesReasonKey
