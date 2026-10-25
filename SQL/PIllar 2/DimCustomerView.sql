@@ -1,5 +1,6 @@
 CREATE or ALTER VIEW dbo.vw_dimCustomer AS
 	SELECT 
+		CONCAT (FirstName, ' ', LastName) AS FullName,
 		CustomerKey, 
 		GeographyKey,
 		BirthDate,
