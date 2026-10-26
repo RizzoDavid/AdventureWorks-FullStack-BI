@@ -1,4 +1,4 @@
-CREATE VIEW dbo.vw_DimGeography AS
+CREATE or Alter VIEW dbo.vw_DimGeography AS
 SELECT 
     GeographyKey,
     City,
@@ -6,6 +6,7 @@ SELECT
     StateProvinceName AS State,
     CountryRegionCode,
     EnglishCountryRegionName AS Country,
-    PostalCode
+    PostalCode, 
+    SalesTerritoryKey
 FROM dbo.DimGeography;
 GO

@@ -1,4 +1,4 @@
-CREATE VIEW dbo.vw_FactInternetSales AS
+CREATE or ALTER VIEW dbo.vw_FactInternetSales AS
 SELECT 
     SalesOrderNumber,
     SalesOrderLineNumber,
@@ -9,6 +9,8 @@ SELECT
     UnitPrice,
     SalesAmount,
     TotalProductCost,
-    (SalesAmount - TotalProductCost) AS GrossProfit
+    (SalesAmount - TotalProductCost) AS GrossProfit,
+    ShipDateKey,
+    SalesTerritoryKey
 FROM dbo.FactInternetSales;
 GO
