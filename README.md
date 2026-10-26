@@ -56,7 +56,7 @@ Consumer Findings
 
 
 <!-- Start of picture text -->
-o —<br>5 _<br>o —<br><!-- End of picture text -->
+<!-- End of picture text -->
 
 ##### Reseller Findings 
 
@@ -69,7 +69,7 @@ o —<br>5 _<br>o —<br><!-- End of picture text -->
 
 
 <!-- Start of picture text -->
-Q62<br>Crs)<br><!-- End of picture text -->
+<!-- End of picture text -->
 
 ##### Sug gested Goals 
 
