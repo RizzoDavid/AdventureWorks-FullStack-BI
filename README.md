@@ -86,7 +86,7 @@ How does profitability and unit volume compare between direct-to-consumer and B2
 
 
 <!-- Start of picture text -->
-Gross Profit and Revenue<br>“Se7im "37% _$16.35M $768.08 "52001 (G049M) “i4o% _$3357M_SI9.66K 703658<br>inl yee<br><!-- End of picture text -->
+<!-- End of picture text -->
 
 #### **K E Y F I N D I N G S** 
 
@@ -131,7 +131,7 @@ Who are our highest-value customer cohorts, and what demographic factors correla
 
 
 <!-- Start of picture text -->
-Customer Lifecycle<br>$16.35M. 17429 $938.18 15.29% 41.37%<br>TS —— ma<br>TT = — —<br>TS == =<br>— pele ——9<br><!-- End of picture text -->
+<!-- End of picture text -->
 
 - United Kingdom 
 
@@ -181,7 +181,7 @@ Between 2011 and 2013, Adventure Works Direct-to-Consumer (Internet) customer ba
 
 
 <!-- Start of picture text -->
-|7<br><!-- End of picture text -->
+<!-- End of picture text -->
 
 #### **C O R E Q U E S T I O N** 
 
